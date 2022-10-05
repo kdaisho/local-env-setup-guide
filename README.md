@@ -27,7 +27,7 @@ https://nixos.org/download.html#nix-install-macos
 
 ### nix-direnv
 
-There are a few ways to install it. Installing it via
+There are a few ways to install it. Installing via
 [home-manager](https://nix-community.github.io/home-manager) is recommended.
 
 #### Installing home-manager
@@ -126,7 +126,7 @@ direnv allow .
 ```
 
 Installing all dependencies might take some time, but it shouldn't be more than a few minutes.
-If you encounter this, about the process (CTRL-C), and try different version of dependencies.
+If you encounter this, abort the process (CTRL-C), and try different version of dependencies.
 
 [Nix Packages](https://search.nixos.org/packages)
 
