@@ -92,6 +92,8 @@ Both command should print the version.
 
 ## Demo
 
+For demonstration, we're installing `deno` and `docker-compose` while setting scope within `test` and its subdirectories.
+
 Create a directory `test` then navigate into it.
 
 ```bash
@@ -126,9 +128,7 @@ direnv allow .
 ```
 
 Installing all dependencies might take some time, but it shouldn't be more than a few minutes.
-If you encounter this, abort the process (CTRL-C), and try different version of dependencies.
-
-[Nix Packages](https://search.nixos.org/packages)
+If you encounter this, abort the process (CTRL-C), then try different version of dependencies. [Nix Packages](https://search.nixos.org/packages)
 
 ### Test
 
