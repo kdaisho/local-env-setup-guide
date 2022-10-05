@@ -7,11 +7,11 @@ significantly easier.
 
 ### [`Nix`](https://nixos.org/)
 
-A package manager, like Terraform, for your machine.
+A purely functional package manager.
 
 ### [direnv](https://direnv.net/)
 
-It provides scope for each directory to have a unique dependencies. For this, we recommend
+It can load and unload environment variables depending on the current directory, allowing developers to maintain different dependencies per directory. For this, we recommend
 installing [nix-direnv](https://github.com/nix-community/nix-direnv) (a variant maintained by nix
 community).
 
