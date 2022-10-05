@@ -76,7 +76,7 @@ keep-derivations = true
 keep-outputs = true
 ```
 
-## Test
+### Test
 
 Restart your shell, then run
 
