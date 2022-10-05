@@ -23,7 +23,7 @@ community).
 sh <(curl -L https://nixos.org/nix/install)
 ```
 
-details: https://nixos.org/download.html#nix-install-macos
+https://nixos.org/download.html#nix-install-macos
 
 ### nix-direnv
 
@@ -92,7 +92,7 @@ Both command should print the version.
 
 ## Demo
 
-Create a directory `test` then navigate in it.
+Create a directory `test` then navigate into it.
 
 ```bash
 mkdir test && cd test
@@ -125,7 +125,26 @@ the change and install dependencies listed in shell.nix.
 direnv allow .
 ```
 
-Note: installing all dependencies might take some time, but it shouldn't be more than a few minutes.
+Installing all dependencies might take some time, but it shouldn't be more than a few minutes.
 If you encounter this, about the process (CTRL-C), and try different version of dependencies.
 
 [Nix Packages](https://search.nixos.org/packages)
+
+### Test
+
+Both command below should print the version.
+
+```
+deno --version
+```
+
+```
+docker-compose --version
+```
+
+Once navigating to the parent directory, you should lose access to the dependencies.
+
+```bash
+cd ../ && deno --version
+# zsh: command not found: deno
+```
