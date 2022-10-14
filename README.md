@@ -73,6 +73,16 @@ keep-derivations = true
 keep-outputs = true
 ```
 
+Depending on the shell you are using, you need to add a line in your configuration file.
+
+For zsh users (.zshrc)
+
+```
+eval "$(direnv hook zsh)"
+```
+
+Run `source ~/.zshrc`
+
 ### Test
 
 Restart your shell, then run
