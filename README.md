@@ -155,3 +155,27 @@ Once navigating to the parent directory, you should lose access to the dependenc
 cd ../ && deno --version
 # zsh: command not found: deno
 ```
+
+## Troubleshoot
+
+### I can't access direnv, home-manager after macOS upgrade
+
+You upgraded macOS last night then now you see this. The upgrade wiped out your PATH. Try these steps.
+
+```
+direnv --version
+zsh: command not found: direnv
+```
+
+- Find binaries (`bin`). In my case they are in `/Users/<my_user_name>/.nix-profile/bin`.
+- Add the path to `paths` file (`/etc/paths`)
+- Restart shell
+- Print the version to test
+
+```
+direnv --version
+2.32.1
+
+home-manager --version
+22.05
+```
