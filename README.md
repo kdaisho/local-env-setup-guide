@@ -160,12 +160,14 @@ cd ../ && deno --version
 
 ### I can't access direnv, home-manager after macOS upgrade
 
-You upgraded macOS last night then now you see this. The upgrade wiped out your PATH. Try these steps.
+You upgraded macOS last night then now you see this.
 
 ```
 direnv --version
 zsh: command not found: direnv
 ```
+
+The upgrade wiped out your PATH. Try these steps.
 
 - Find binaries (`bin`). In my case they are in `/Users/<my_user_name>/.nix-profile/bin`.
 - Add the path to `paths` file (`/etc/paths`)
