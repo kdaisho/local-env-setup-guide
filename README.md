@@ -55,7 +55,8 @@ In `$HOME/.config/nixpkgs/home.nix` add
 
 {
   # ...other config, other config...
-
+  
+  programs.home-manager.enable = true;
   programs.direnv.enable = true;
   programs.direnv.nix-direnv.enable = true;
   programs.bash.enable = true;
